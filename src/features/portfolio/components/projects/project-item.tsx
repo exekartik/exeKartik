@@ -43,7 +43,7 @@ export function ProjectItem({
           <div className="mr-2 ml-6 flex size-6 shrink-0 items-center justify-center text-muted-foreground group-hover/project:text-foreground">
             {project.id === "doctors-vision" && (
               <svg className="size-4" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M11,2V8H5V11H11V22H13V11H19V8H13V2H11Z" />
+                <path d="M8.2,17A4.2,4.2 0 0,1 4,12.8A4.2,4.2 0 0,1 8.2,8.6A4.2,4.2 0 0,1 12.4,12.8A4.2,4.2 0 0,1 8.2,17M15.8,17A4.2,4.2 0 0,1 11.6,12.8A4.2,4.2 0 0,1 15.8,8.6A4.2,4.2 0 0,1 20,12.8A4.2,4.2 0 0,1 15.8,17M8.2,14.2A1.4,1.4 0 0,0 9.6,12.8A1.4,1.4 0 0,0 8.2,11.4A1.4,1.4 0 0,0 6.8,12.8A1.4,1.4 0 0,0 8.2,14.2M15.8,14.2A1.4,1.4 0 0,0 17.2,12.8A1.4,1.4 0 0,0 15.8,11.4A1.4,1.4 0 0,0 14.4,12.8A1.4,1.4 0 0,0 15.8,14.2M12,8.5V2.1A1.4,1.4 0 0,1 13.4,0.7A1.4,1.4 0 0,1 14.8,2.1V7.6C14,7.1 13.1,7 12,7M12,8.5C10.9,7 10,7.1 9.2,7.6V2.1A1.4,1.4 0 0,1 10.6,0.7A1.4,1.4 0 0,1 12,2.1V8.5Z" />
               </svg>
             )}
             {project.id === "google-takeout-extension" && (
