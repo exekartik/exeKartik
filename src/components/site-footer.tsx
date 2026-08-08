@@ -1,7 +1,8 @@
+"use client"
+
 import { LICENSE, SOURCE_CODE_GITHUB_URL } from "@/config/site"
 import { cn } from "@/lib/utils"
-import { DmcaIcon, GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons"
-import { SiteFooterInteractiveLogotype } from "@/components/site-footer-brand"
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons"
 import { SOCIAL } from "@/features/portfolio/data/social-links"
 
 export function SiteFooter() {
@@ -58,7 +59,7 @@ export function SiteFooter() {
                 <li>
                   <a
                     className="link-underline"
-                    href="https://openpanel.dev?utm_source=chanhdai.com&utm_medium=referral&utm_campaign=footer"
+                    href="https://openpanel.dev?utm_source=exekartik&utm_medium=referral&utm_campaign=footer"
                     target="_blank"
                     rel="noopener"
                   >
@@ -101,64 +102,45 @@ export function SiteFooter() {
 
         <div className="screen-line-top screen-line-bottom flex w-full before:z-1 after:z-1">
           <div className="mx-auto flex items-center justify-center gap-3 border-x border-line bg-background px-4">
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href={xLink.href}
-              target="_blank"
-              rel="noopener"
+            <button
+              type="button"
+              className="flex cursor-pointer items-center text-muted-foreground transition-[color] hover:text-foreground"
+              onClick={() =>
+                window.open(xLink.href, "_blank", "noopener,noreferrer")
+              }
               aria-label="X Profile"
             >
               <XIcon className="size-4" />
-            </a>
+            </button>
 
             <Separator />
 
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href={githubLink.href}
-              target="_blank"
-              rel="noopener"
+            <button
+              type="button"
+              className="flex cursor-pointer items-center text-muted-foreground transition-[color] hover:text-foreground"
+              onClick={() =>
+                window.open(githubLink.href, "_blank", "noopener,noreferrer")
+              }
               aria-label="GitHub Profile"
             >
               <GitHubIcon className="size-4" />
-            </a>
+            </button>
 
             <Separator />
 
-            <a
-              className="flex items-center text-muted-foreground transition-[color] hover:text-foreground"
-              href={linkedinLink.href}
-              target="_blank"
-              rel="noopener"
+            <button
+              type="button"
+              className="flex cursor-pointer items-center text-muted-foreground transition-[color] hover:text-foreground"
+              onClick={() =>
+                window.open(linkedinLink.href, "_blank", "noopener,noreferrer")
+              }
               aria-label="LinkedIn Profile"
             >
               <LinkedInIcon className="size-4" />
-            </a>
-
-            <Separator />
-
-            <a
-              className="flex text-muted-foreground transition-[color] hover:text-foreground"
-              href={
-                process.env.NEXT_PUBLIC_DMCA_URL ||
-                "https://www.dmca.com/ProtectionPro.aspx"
-              }
-              target="_blank"
-              rel="noopener"
-              aria-label="DMCA.com Protection Status"
-            >
-              <DmcaIcon className="h-4.5 w-auto" />
-            </a>
+            </button>
           </div>
         </div>
-
-        {/* <div className="*:absolute *:z-2 *:flex *:size-2 *:border *:border-line *:bg-background">
-          <div className="bottom-[-3.5px] left-[-4.5px]" />
-          <div className="right-[-4.5px] bottom-[-3.5px]" />
-        </div> */}
       </div>
-
-      <SiteFooterInteractiveLogotype />
 
       <div className="h-(--fade-bottom-height)" />
       <div className="pb-[env(safe-area-inset-bottom,0)]" />

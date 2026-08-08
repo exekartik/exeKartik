@@ -10,7 +10,7 @@ import { CERTIFICATIONS } from "@/features/portfolio/data/certifications"
 
 import { CertificationItem } from "./certification-item"
 
-const ID = "certs"
+const ID = "certifications"
 
 export function Certifications() {
   return (

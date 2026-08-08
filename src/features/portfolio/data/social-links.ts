@@ -26,13 +26,13 @@ export const SOCIAL = {
   },
   dailydotdev: {
     title: "daily.dev",
-    handle: "@exekartik",
-    href: "https://app.daily.dev/exekartik",
+    handle: "@exekatik",
+    href: "https://app.daily.dev/exekatik",
     sameAs: true,
   },
   discord: {
     title: "Discord",
-    handle: "exekartik",
+    handle: "exe_kartikk",
     href: "https://discord.com",
   },
   youtube: {

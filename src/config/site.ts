@@ -24,20 +24,24 @@ export const META_THEME_COLORS = {
 
 export const MAIN_NAV: NavItem<Route | string>[] = [
   {
-    title: "Resume",
-    href: "/resume",
-  },
-  {
-    title: "Work",
-    href: "/#work",
-  },
-  {
-    title: "Blogs",
-    href: "/blog",
+    title: "Experience",
+    href: "/#experience",
   },
   {
     title: "Community",
-    href: "/community",
+    href: "/#community",
+  },
+  {
+    title: "Projects",
+    href: "/#projects",
+  },
+  {
+    title: "Blogs",
+    href: "/#blog",
+  },
+  {
+    title: "Interests",
+    href: "/#interests",
   },
 ]
 
@@ -53,8 +57,6 @@ export const X_HANDLE = SOCIAL.x.handle
 export const GITHUB_USERNAME = SOCIAL.github.handle
 export const SOURCE_CODE_GITHUB_REPO = "exekartik/exeKartik"
 export const SOURCE_CODE_GITHUB_URL = "https://github.com/exekartik/exeKartik"
-
-export const SPONSORSHIP_URL = "https://github.com/sponsors/exekartik"
 
 export const UTM_PARAMS = {
   utm_source: "exekartik",

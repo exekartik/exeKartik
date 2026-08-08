@@ -1,3 +1,5 @@
+"use client"
+
 import { TECH_STACK } from "../data/tech-stack"
 import type { TechStack as TechStackType } from "../types/tech-stack"
 import { Panel, PanelHeader, PanelTitle } from "./panel"
@@ -53,15 +55,20 @@ export function TechStack() {
                   {items.map((item) => {
                     return (
                       <li key={item.key} className="flex">
-                        <a
-                          href={item.href}
-                          target="_blank"
-                          rel="noopener"
-                          className="flex h-(--badge-height) items-center justify-center gap-1.25 rounded-full bg-zinc-50/80 px-2 font-mono text-xs text-foreground inset-ring-1 inset-ring-border dark:bg-zinc-900/80 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 [&_svg]:text-muted-foreground/80"
+                        <button
+                          type="button"
+                          onClick={() =>
+                            window.open(
+                              item.href,
+                              "_blank",
+                              "noopener,noreferrer"
+                            )
+                          }
+                          className="flex h-(--badge-height) cursor-pointer items-center justify-center gap-1.25 rounded-full bg-zinc-50/80 px-2 font-mono text-xs text-foreground inset-ring-1 inset-ring-border dark:bg-zinc-900/80 [&_svg]:pointer-events-none [&_svg]:size-3.5 [&_svg]:shrink-0 [&_svg]:text-muted-foreground/80"
                         >
                           {item.icon}
                           {item.title}
-                        </a>
+                        </button>
                       </li>
                     )
                   })}

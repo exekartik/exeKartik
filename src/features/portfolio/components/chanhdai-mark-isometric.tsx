@@ -28,10 +28,10 @@ const transition: Transition = {
 export function ChanhDaiMarkIsometric() {
   const id = useId()
   const ids = {
-    facePattern: `ncdai-face-pattern-${id}`,
-    faceFill: `ncdai-face-fill-${id}`,
-    stroke: `ncdai-stroke-${id}`,
-    radialGradient: `ncdai-radial-gradient-${id}`,
+    facePattern: `exe-face-pattern-${id}`,
+    faceFill: `exe-face-fill-${id}`,
+    stroke: `exe-stroke-${id}`,
+    radialGradient: `exe-radial-gradient-${id}`,
   }
 
   const ref = useRef<SVGSVGElement>(null)

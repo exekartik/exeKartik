@@ -122,7 +122,7 @@ export function GitHubContributionGraph({
       </ContributionGraph>
 
       <figcaption className="screen-line-top px-4 py-3 text-center text-sm text-balance text-muted-foreground">
-        FIG_002. Daily coding & learning activity.
+        FIG_002. Daily coding & learning activity
       </figcaption>
     </figure>
   )

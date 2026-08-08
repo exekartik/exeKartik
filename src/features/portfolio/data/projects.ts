@@ -5,6 +5,7 @@ export const PROJECTS: Project[] = [
     id: "doctors-vision",
     title: "Doctor's Vision",
     link: "https://doctor-s-vision.vercel.app/",
+    githubUrl: "https://github.com/exekartik/Doctor-s-Vision",
     skills: [
       "Next.js",
       "React",
@@ -29,6 +30,7 @@ export const PROJECTS: Project[] = [
     id: "google-takeout-extension",
     title: "Google Photos Takeout Helper",
     link: "https://github.com/exekartik/GoogleTakeoutExtension",
+    githubUrl: "https://github.com/exekartik/GoogleTakeoutExtension",
     skills: [
       "TypeScript",
       "Node.js",
@@ -46,12 +48,12 @@ export const PROJECTS: Project[] = [
     logo: "/images/projects/google-takeout-cli.png",
     previewImage: "/images/projects/google-takeout-preview.png",
     objectFit: "contain",
-    isExpanded: true,
   },
   {
     id: "social-sparrow",
     title: "Social Sparrow",
     link: "https://social-sparrow-self.vercel.app/",
+    githubUrl: "https://github.com/exekartik/SocialSparrow",
     skills: [
       "React 19",
       "TypeScript",
@@ -71,6 +73,5 @@ export const PROJECTS: Project[] = [
 - Integrated **Cloudinary CDN** for drag-and-drop media uploads and **Zernio Social API** for seamless multi-platform account connections with status toggles and avatar sync`,
     logo: "/images/projects/socialsparrow.png",
     previewImage: "/images/projects/socialsparrow-preview.png",
-    isExpanded: true,
   },
 ]

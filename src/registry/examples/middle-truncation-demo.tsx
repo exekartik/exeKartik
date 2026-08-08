@@ -15,7 +15,7 @@ export default function MiddleTruncationDemo() {
           <ExampleItem>
             <ExampleLabel>{`<MiddleTruncation>`}</ExampleLabel>
             <MiddleTruncation>
-              /Users/ncdai/Code/chanhdai.com/src/components/ui/button.tsx
+              /Users/exekartik/Code/exeKartik/src/components/ui/button.tsx
             </MiddleTruncation>
           </ExampleItem>
 
@@ -29,7 +29,7 @@ export default function MiddleTruncationDemo() {
           <ExampleItem>
             <ExampleLabel>{`<MiddleTruncation minEnd={12}>`}</ExampleLabel>
             <MiddleTruncation minEnd={12}>
-              /Users/ncdai/Code/chanhdai.com/node_modules/shadcn/package.json
+              /Users/exekartik/Code/exeKartik/node_modules/shadcn/package.json
             </MiddleTruncation>
           </ExampleItem>
 

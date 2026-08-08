@@ -25,9 +25,19 @@ export const EXPERIENCES: Experience[] = [
         },
         employmentType: "Full-time",
         icon: <CodeXmlIcon />,
-        description: `- Led the website development team.
-- Designed and built responsive web interfaces.`,
-        skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+        description: `- **Full-Stack Architecture & Leadership**: Spearheaded the technical architecture, UI/UX design, and development of web platforms supporting Chartered Accountants (CAs) and financial advisory teams.
+- **CA Workflow & Audit Automation**: Engineered automated document ingestion, tax compliance trackers, and financial auditing calculators to streamline daily Chartered Accountant operations.
+- **Client & Financial Dashboards**: Developed interactive real-time dashboards for CAs to manage GST filings, income tax returns, compliance deadlines, and financial audit reports securely.
+- **Performance & Security**: Implemented role-based access controls (RBAC), data encryption, and mobile-first responsive interfaces achieving high SEO and performance benchmarks using Next.js, React, TypeScript, and Tailwind CSS.`,
+        skills: [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "Audit Systems",
+          "Financial Software",
+        ],
         isExpanded: true,
       },
     ],

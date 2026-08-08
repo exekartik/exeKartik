@@ -7,6 +7,8 @@ import {
   VenusIcon,
 } from "lucide-react"
 
+import { XIcon } from "@/components/icons"
+import { SOCIAL } from "@/features/portfolio/data/social-links"
 import { USER } from "@/features/portfolio/data/user"
 import type { User } from "@/features/portfolio/types/user"
 
@@ -20,7 +22,6 @@ import {
   IntroItemLink,
 } from "./intro-item"
 import { JobItem } from "./job-item"
-import { PhoneItem } from "./phone-item"
 
 export function Overview() {
   return (
@@ -56,7 +57,19 @@ export function Overview() {
 
         <CurrentLocalTimeItem timeZone={USER.timeZone} />
 
-        <PhoneItem phoneNumberB64={USER.phoneNumberB64} />
+        <IntroItem>
+          <IntroItemIcon>
+            <XIcon className="size-4" />
+          </IntroItemIcon>
+          <IntroItemContent>
+            <IntroItemLink
+              href={SOCIAL.x.href}
+              aria-label={`X Profile: ${SOCIAL.x.handle}`}
+            >
+              {SOCIAL.x.handle}
+            </IntroItemLink>
+          </IntroItemContent>
+        </IntroItem>
 
         <EmailItem emailB64={USER.emailB64} />
 

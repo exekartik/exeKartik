@@ -95,8 +95,8 @@ const CARDS = [
     avatar: "https://unavatar.io/x/aaronmahlke",
   },
   {
-    name: "Chánh Đại",
-    handle: "@iamncdai",
-    avatar: "https://unavatar.io/x/iamncdai",
+    name: "Kartik Singh",
+    handle: "@exekartik",
+    avatar: "/images/avatar.jpg",
   },
 ]

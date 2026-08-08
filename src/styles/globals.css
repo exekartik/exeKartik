@@ -470,6 +470,10 @@
     @apply bg-selection text-selection-foreground;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground antialiased;
     font-synthesis-weight: none;

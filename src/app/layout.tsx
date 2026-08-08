@@ -49,11 +49,11 @@ export const metadata: Metadata = {
   keywords: SITE_INFO.keywords,
   authors: [
     {
-      name: "ncdai",
+      name: USER.displayName,
       url: SITE_INFO.url,
     },
   ],
-  creator: "ncdai",
+  creator: USER.displayName,
   openGraph: {
     siteName: SITE_INFO.name,
     url: "/",
@@ -87,8 +87,8 @@ export const metadata: Metadata = {
       },
     ],
     apple: {
-      url: "https://assets.chanhdai.com/images/apple-touch-icon.png",
-      type: "image/png",
+      url: "/bihar-emblem.svg",
+      type: "image/svg+xml",
       sizes: "180x180",
     },
   },
@@ -111,22 +111,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={fontVariables} suppressHydrationWarning>
       <head>
-        <script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{ __html: darkModeScript }}
-        />
         <JsonLdScript data={getWebSiteJsonLd()} />
-      </head>
-
-      {process.env.NEXT_PUBLIC_GTM_ID && (
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
-      )}
-
-      <body>
         <Script
-          id="dark-mode-b64"
+          id="dark-mode-theme"
           strategy="beforeInteractive"
-          src={`data:text/javascript;base64,${btoa(darkModeScript)}`}
+          dangerouslySetInnerHTML={{ __html: darkModeScript }}
         />
         <Script
           id="avatar-lights"
@@ -140,6 +129,13 @@ export default function RootLayout({
             `,
           }}
         />
+      </head>
+
+      {process.env.NEXT_PUBLIC_GTM_ID && (
+        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
+      )}
+
+      <body>
         {ADSENSE_CLIENT && (
           <Script
             async
