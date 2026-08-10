@@ -20,8 +20,8 @@ export const SOCIAL = {
   },
   linkedin: {
     title: "LinkedIn",
-    handle: "kartik-kumar-singh-02a057327",
-    href: "https://www.linkedin.com/in/kartik-kumar-singh-02a057327/",
+    handle: "exekartik",
+    href: "https://www.linkedin.com/in/exekartik/",
     sameAs: true,
   },
   dailydotdev: {
