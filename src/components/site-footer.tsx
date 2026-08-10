@@ -86,6 +86,20 @@ export function SiteFooter() {
           </Item>
 
           <Item>
+            <dt>Resume</dt>
+            <dd>
+              <a
+                className="link-underline"
+                href="https://drive.google.com/file/d/1EjT3hRzrUr7q8czelB-umY3iFn0UQ1th/view?usp=sharing"
+                target="_blank"
+                rel="noopener"
+              >
+                Kartik Singh
+              </a>
+            </dd>
+          </Item>
+
+          <Item>
             <dt>License</dt>
             <dd>
               <a
