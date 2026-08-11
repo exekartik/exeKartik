@@ -35,7 +35,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     id: "js-this-call-apply-bind",
     title: "The Magic of 'this', call(), apply(), & bind() in JavaScript",
-    link: "https://medium.com/@kartikvskumarsingh",
+    link: "https://exethemagicofthiscallapplyandbindinjavascript.hashnode.dev/the-magic-of-this-call-apply-and-bind-in-javascript",
     image: "/images/blogs/js-this-call-apply-bind.png",
     publishedAt: "2024-08-05",
     platform: "Hashnode",
