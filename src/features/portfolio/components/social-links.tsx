@@ -31,10 +31,14 @@ export function SocialLinks() {
                         className="cursor-pointer text-foreground/80 shadow-none [&_svg:not([class*='size-'])]:size-4.5"
                         variant="outline"
                         size="icon-sm"
-                        onClick={() =>
-                          window.open(url, "_blank", "noopener,noreferrer")
+                        render={
+                          <a
+                            href={url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={item.title}
+                          />
                         }
-                        aria-label={item.title}
                       >
                         {SOCIAL_ICONS[item.name]}
                         <span className="sr-only">{item.title}</span>

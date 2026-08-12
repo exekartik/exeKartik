@@ -116,42 +116,39 @@ export function SiteFooter() {
 
         <div className="screen-line-top screen-line-bottom flex w-full before:z-1 after:z-1">
           <div className="mx-auto flex items-center justify-center gap-3 border-x border-line bg-background px-4">
-            <button
-              type="button"
+            <a
+              href={xLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex cursor-pointer items-center text-muted-foreground transition-[color] hover:text-foreground"
-              onClick={() =>
-                window.open(xLink.href, "_blank", "noopener,noreferrer")
-              }
               aria-label="X Profile"
             >
               <XIcon className="size-4" />
-            </button>
+            </a>
 
             <Separator />
 
-            <button
-              type="button"
+            <a
+              href={githubLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex cursor-pointer items-center text-muted-foreground transition-[color] hover:text-foreground"
-              onClick={() =>
-                window.open(githubLink.href, "_blank", "noopener,noreferrer")
-              }
               aria-label="GitHub Profile"
             >
               <GitHubIcon className="size-4" />
-            </button>
+            </a>
 
             <Separator />
 
-            <button
-              type="button"
+            <a
+              href={linkedinLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex cursor-pointer items-center text-muted-foreground transition-[color] hover:text-foreground"
-              onClick={() =>
-                window.open(linkedinLink.href, "_blank", "noopener,noreferrer")
-              }
               aria-label="LinkedIn Profile"
             >
               <LinkedInIcon className="size-4" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

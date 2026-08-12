@@ -85,21 +85,21 @@ const SOCIAL_LINKS: SocialLink[] = [
   {
     icon: "https://assets.chanhdai.com/images/link-icons/linkedin.webp",
     title: "LinkedIn",
-    href: "https://linkedin.com/in/exekartik",
+    href: "https://www.linkedin.com/in/exekartik/",
   },
   {
     icon: "https://assets.chanhdai.com/images/link-icons/dailydotdev.webp",
     title: "daily.dev",
-    href: "https://app.daily.dev/exekartik",
+    href: "https://daily.dev/exekatik",
   },
   {
     icon: "https://assets.chanhdai.com/images/link-icons/discord.webp",
     title: "Discord",
-    href: "https://discord.com",
+    href: "https://discord.com/users/exe_kartikk",
   },
   {
     icon: "https://assets.chanhdai.com/images/link-icons/youtube.webp",
     title: "YouTube",
-    href: "https://www.youtube.com/@exekartik",
+    href: "https://music.youtube.com/playlist?list=PLwvEwCHkUeHmHz5tp3WGpSS45o1gPmox5&si=-7RYct-JRMQFQ5An",
   },
 ]

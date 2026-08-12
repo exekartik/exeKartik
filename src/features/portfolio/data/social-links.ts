@@ -27,18 +27,18 @@ export const SOCIAL = {
   dailydotdev: {
     title: "daily.dev",
     handle: "@exekatik",
-    href: "https://app.daily.dev/exekatik",
+    href: "https://daily.dev/exekatik",
     sameAs: true,
   },
   discord: {
     title: "Discord",
     handle: "exe_kartikk",
-    href: "https://discord.com",
+    href: "https://discord.com/users/exe_kartikk",
   },
   youtube: {
     title: "YouTube",
     handle: "@exekartik",
-    href: "https://www.youtube.com/@exekartik",
+    href: "https://music.youtube.com/playlist?list=PLwvEwCHkUeHmHz5tp3WGpSS45o1gPmox5&si=-7RYct-JRMQFQ5An",
     sameAs: true,
   },
 } satisfies Record<string, SocialProfile>
